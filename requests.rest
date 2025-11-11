@@ -1,0 +1,38 @@
+GET http://localhost:3001/api/blogs
+
+### Create new blog
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRhcml1czIyIiwiaWQiOiI2OTEyMGVlNzIwMGE0ZGYxNmMzMDUwYWIiLCJpYXQiOjE3NjI4ODg5OTJ9.duswfHSW3vpopr15BQ854fOrjd5bJzgkQbzmX1ZT-RI
+
+{
+  "title": "Amintiri din dsadsa",
+  "author": "IonCreanga",
+  "url": "www.amintiridincopilarie.ro",
+  "likes": 3
+}
+
+###create new User
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "Darius22",
+  "name": "Darius",
+  "password": "1234"
+}
+
+###login
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "Darius22",
+  "password": "1234"
+}
+
+###delete
+DELETE http://localhost:3001/api/blogs/691391494c2aac1be4b9c8a5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRhcml1czIyIiwiaWQiOiI2OTEyMGVlNzIwMGE0ZGYxNmMzMDUwYWIiLCJpYXQiOjE3NjI4ODg5OTJ9.duswfHSW3vpopr15BQ854fOrjd5bJzgkQbzmX1ZT-RI
+
